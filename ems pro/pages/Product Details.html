@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <style>
+        .container{
+            text-align: center;
+            border: 2px solid black;
+            background-color: lightblue;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+ 
+        <h1>PRODUCT DETAILS</h1>     
+
+        <form action="" name="f">
+            <label for="PID">PID:</label>
+            <input type="text" name="pid"><br><br>
+            <label for="PNAME">PNAME:</label>
+            <input type="text" name="pname"><br><br>
+            <label for="PRICE">PRICE:</label>
+            <input type="text" name="price"><br><br>
+            <label for="QUANTITY">QUANTITY:</label>
+            <input type="text" name="quantity"><br><br><br>
+
+            <input type="button" value="STORE" onclick="operate(store)">
+            <input type="button" value="RESET" onclick="operate(reset)">
+            <input type="button" value="SHOW ALL" onclick="operate(showall)">
+            <input type="button" value="DELETE ALL" onclick="operate(deleteall)">
+            
+        </form>
+
+        <P>STATUS: <span id="stat"></span></P>
+
+    </div>
+
+    <script>
+        var productsArr = []
+
+        
+
+        function operate(fun){
+            var pId = document.f.pid.value
+            var pName = document.f.pname.value
+            var Price = document.f.price.value
+            var Quantity = document.f.quantity.value
+
+            var product = {}
+            product.pid = pId
+            product.pname = pName
+            product.price = Price
+            product.quantity = Quantity
+
+            fun(product)
+
+        }
+
+      
+
+       var store =  function store(product){
+            productsArr.push(product)
+            console.log(productsArr)
+
+            var s = document.getElementById('stat')
+                s.innerHTML = "NEW PRODUCT ADDED"
+        }
+
+        var reset = function reset(){
+
+        }
+
+        var showall = function ShowAll(){
+
+        }
+
+        var deleteall = function deleteAll(){
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+
+    <style>
+      form {
+        background-color: bisque;
+        color: brown;
+        border: 1px solid red;
+        width: 30%;
+      }
+      input[type="submit"]:hover {
+        background-color: greenyellow;
+      }
+      th,
+      td {
+        border: 1px solid rgb(255, 47, 47);
+        background-color: aqua;
+        text-align: center;
+      }
+      td {
+        border-collapse: collapse;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      header {
+        width: 100%;
+        height: 100px;
+        background-color: seagreen;
+        color: black;
+      }
+      footer {
+        width: 100%;
+        height: 100px;
+        background-color: seagreen;
+        color: black;
+      }
+      details {
+        display: inline;
+      }
+      button:hover {
+        background-color: greenyellow;
+      }
+      button:active {
+        background-color: gold;
+      }
+      .containerA {
+        display: inline;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="\images\W3Schools_logo.svg.png"
+        alt="Loading Image.... "
+        width="50"
+        height="50"
+      /><br />
+      <button>HTML</button>
+      <button>CSS</button>
+      <button>JAVASCRIPT</button>
+      <button>SQL</button>
+      <button>PYTHON</button>
+      <button>BOOTSTRAP</button>
+      <button>HOW TO</button>
+      <button>W3.CSS</button>
+      <button>JAVA</button>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <img
+        src="\images\search.jpg"
+        alt="Loading Image...."
+        width="30"
+        height="30"
+      />
+      &nbsp; &nbsp; &nbsp;
+      <img
+        src="\images\globe.png"
+        alt="Loading Image..."
+        width="30"
+        height="30"
+      />
+    </header>
+
+    <details>
+      <summary>JAVA</summary>
+      <p>
+        <b>Java</b> is a high-level, class-based, object-oriented programming
+        language that is designed to have as few implementation dependencies as
+        possible. It is a general-purpose programming language intended to let
+        programmers write once, run anywhere meaning that compiled Java code can
+        run on all platforms that support Java without the need to recompile.
+      </p>
+    </details>
+
+    <details>
+      <summary>Python</summary>
+      <p> 
+        <b>Python</b> is a high-level, interpreted, general-purpose programming
+        language. Its design philosophy emphasizes code readability with the use
+        of significant indentation. Python is dynamically-typed and
+        garbage-collected. It supports multiple programming paradigms, including
+        structured (particularly procedural), object-oriented and functional
+        programming.
+      </p>
+    </details>
+
+    <div class="row">
+      <div class="column">
+        <form action="">
+          <h2>Sign Up</h2>
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" /><br />
+          <label for="lname">Last Name:</label><br />
+          <input type="text" id="lname" /><br />
+          <label for="phone">Contact Number:</label><br />
+          <input type="tel" id="phone" /><br />
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" /><br />
+          <label for="pwd">Set password:</label><br />
+          <input type="password" id="pwd" /><br />
+          <label for="dob">Date Of Birth:</label><br />
+          <input type="date" id="dob" /><br /><br />
+          <label for="country">Country:</label><br />
+          <select name="country" id="country">
+            <option value="">-SELECT-</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+            <option value="Ukraine">Ukraine</option></select
+          ><br /><br /><br />
+          <label for="gen">Gender:</label><br />
+          <input type="radio" name="gen" value="MALE" />MALE
+          <input type="radio" name="gen" value="FEMALE" />FEMALE
+          <input type="radio" name="gen" value="OTHERS" />OTHERS
+          <br /><br /><br />
+          <input type="submit" />
+        </form>
+      </div>
+      <div class="column">
+        <img src="\images\Java-code-.png" alt="Loading Image..." />
+      </div>
+    </div>
+
+    <br /><br />
+
+    <table>
+      <tr>
+        <th>Cars</th>
+        <th>Bikes</th>
+        <th>Phones</th>
+        <th>Laptops</th>
+      </tr>
+
+      <tr>
+        <td>Ford</td>
+        <td>Yamaha</td>
+        <td>Nokia</td>
+        <td>Asus</td>
+      </tr>
+
+      <tr>
+        <td>BMW</td>
+        <td>Honda</td>
+        <td>Samsung</td>
+        <td>Dell</td>
+      </tr>
+
+      <tr>
+        <td>Audi</td>
+        <td>KTM</td>
+        <td>Mi</td>
+        <td>Lenovo</td>
+      </tr>
+    </table>
+
+    <footer>
+      <p>
+        W3Schools is optimized for learning and training. Examples might be
+        simplified to improve reading and learning. Tutorials, references, and
+        examples are constantly reviewed to avoid errors, but we cannot warrant
+        full correctness of all content. While using W3Schools, you agree to
+        have read and accepted our terms of use, cookie and privacy policy.
+      </p>
+      <button>Report Error</button>
+      <button>Forum</button>
+      <button>About</button>
+      <button>Shop</button>
+    </footer>
+  </body>
+</html>
